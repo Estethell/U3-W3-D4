@@ -10,12 +10,12 @@ interface ArtProps {
 const Articles = (props: ArtProps) => {
   return (
     <Col lg={3}>
-      <Link to="/detail">
+      <Link className="text-decoration-none" to={"/detail/" + props.info.id}>
         <Card className="m-3" style={{ height: "500px", width: "300px" }}>
           <Card.Img src={props.info.image_url} />
           <Card.Body>
             <Card.Title>{props.info.title}</Card.Title>
-            <h5 className="fs-6"> {props.info.url}</h5>
+            <h5 className="fs-6"> {props.info.summary}</h5>
             <h5 className="fs-6 font-monospace"> {props.info.published_at}</h5>
             <h5 className="fs-6 font-monospace"> {props.info.updated_at}</h5>
           </Card.Body>

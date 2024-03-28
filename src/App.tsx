@@ -21,7 +21,7 @@ function App() {
         />
 
         <Route>
-          <Route path="/detail" element={<ArticleDetail />} />
+          <Route path="/detail/:id" element={<ArticleDetail />} />
         </Route>
       </Routes>
     </BrowserRouter>

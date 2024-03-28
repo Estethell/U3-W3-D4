@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Articles from "./Articles";
 import { Welcome, Result, Event, Launch } from "../Interfaces/ArticleObj";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 
 const MainPage = () => {
   const [art, setArt] = useState<Result[]>([]);
